@@ -48,7 +48,9 @@ const Table = ({ data }) => {
       </table>
       <div className="Print hide-print" style={{ marginTop: "50px" }}>
         <button
-          onClick={() => window.print()}
+          onClick={() => {
+            window.print();
+          }}
           className="waves-effect waves-light btn-large light-blue darken-1"
         >
           <i className="material-icons left">cloud</i>Save Results
