@@ -21,7 +21,7 @@ const Results = () => {
   return (
     <div
       className="container"
-      style={{ marginTop: "20px", marginBottom: "100px" }}
+      style={{ marginTop: "20px", marginBottom: "50px" }}
     >
       <div className="row m hide-print">
         <input

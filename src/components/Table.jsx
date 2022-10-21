@@ -14,6 +14,15 @@ const Table = ({ data }) => {
       </tr>
     );
   });
+
+  const print = () => {
+    try {
+      // Print for Safari browser
+      document.execCommand("print", false, null);
+    } catch {
+      window.print();
+    }
+  };
   return (
     <>
       <h5>Student Data</h5>
@@ -48,9 +57,7 @@ const Table = ({ data }) => {
       </table>
       <div className="Print hide-print" style={{ marginTop: "50px" }}>
         <button
-          onClick={() => {
-            window.print();
-          }}
+          onClick={() => print()}
           className="waves-effect waves-light btn-large light-blue darken-1"
         >
           <i className="material-icons left">cloud</i>Save Results
