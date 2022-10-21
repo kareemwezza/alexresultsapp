@@ -9,8 +9,8 @@ const Table = ({ data }) => {
         <td>{subjectT}</td>
         <td>{obj.end}</td>
         <td>{obj.final}</td>
-        <td>{obj.grade}</td>
         <td>{obj.total}</td>
+        <td>{obj.grade}</td>
       </tr>
     );
   });
